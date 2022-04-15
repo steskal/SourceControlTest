@@ -12,8 +12,12 @@
 <Dictionary/>
 </Global>
 <Phase number="0">
+<Node guiName="CopyAll" guiX="574" guiY="325" id="COPY_ALL" type="SIMPLE_COPY"/>
 <Node guiName="DataGenerator" guiX="346" guiY="325" id="DATA_GENERATOR" type="DATA_GENERATOR"/>
 <Node guiName="Trash" guiX="843" guiY="325" id="TRASH" type="TRASH"/>
-<Edge fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="TRASH:0"/>
+<Node guiName="Trash" guiX="871" guiY="507" id="TRASH1" type="TRASH"/>
+<Edge fromNode="COPY_ALL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="TRASH:0"/>
+<Edge fromNode="COPY_ALL:1" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" outPort="Port 1 (out)" toNode="TRASH1:0"/>
+<Edge fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="COPY_ALL:0"/>
 </Phase>
 </Graph>
