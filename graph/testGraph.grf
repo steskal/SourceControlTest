@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="antoninsteskal" created="Fri Apr 15 09:25:42 EDT 2022" guiVersion="5.14.0.13" id="1650029221262" licenseCode="CLP1DCLOVE28718064BY" name="testGraph" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="|" name="justString" recordDelimiter="\n" type="delimited">
+<Field name="field1" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node guiName="DataGenerator" guiX="346" guiY="325" id="DATA_GENERATOR" type="DATA_GENERATOR"/>
+<Node guiName="Trash" guiX="843" guiY="325" id="TRASH" type="TRASH"/>
+<Edge fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="TRASH:0"/>
+</Phase>
+</Graph>
